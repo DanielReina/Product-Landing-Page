@@ -1,12 +1,44 @@
-#section1{
-    background-color: green;
-    height: 500px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-#section2{
-    background-color: yellow;
-    height: 500px;
+#header {
+  width: 100%;
+  display: flex;
+  background-color: #f9fcfa;
+  border-bottom: 1px solid rgb(59, 59, 59);
 }
-#section3{
-    background-color: orange;
-    height: 500px;
+.title-and-logo {
+  display: flex;
+  width: 80%;
+}
+#header-img {
+  width: 50px;
+  margin-left: 50px;
+}
+#title {
+  margin-left: 50px;
+  font-size: 30px;
+  line-height: 50px;
+}
+#nav-bar {
+  margin-left: 10%;
+  width: 50%;
+}
+#nav-bar > ul {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 60px ;
+}
+#nav-bar > ul > li {
+  list-style: none;
+}
+/* #nav-bar > ul > li:first-child > a {
+margin-left: 50%;
+} */
+#nav-bar ul li a {
+  margin: 20px;
+  text-decoration: none;
+  line-height: 50px;
+  color: black;
 }
