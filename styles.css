@@ -3,6 +3,8 @@
   padding: 0px;
 }
 #header {
+  position: fixed;
+  top: 0px;
   width: 100%;
   display: flex;
   background-color: #f9fcfa;
@@ -28,7 +30,7 @@
 #nav-bar > ul {
   display: flex;
   justify-content: space-around;
-  margin-right: 60px ;
+  margin-right: 60px;
 }
 #nav-bar > ul > li {
   list-style: none;
@@ -41,4 +43,26 @@ margin-left: 50%;
   text-decoration: none;
   line-height: 50px;
   color: black;
+}
+
+#section1 {
+  margin: 0px auto;
+}
+.picture {
+  background-color: black;
+  color: white;
+  margin-top: 50px;
+  padding-top: 100px;
+}
+#section1 > div > img {
+  display: block;
+  margin: 0px auto;
+  align-items: center;
+  width: 700px;
+  border-radius: 999px;
+}
+#section1 > div > h3 {
+  margin-top: 150px;
+  text-align: center;
+  padding-bottom: 200px;
 }
