@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Shippori+Mincho:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=RocknRoll+One&family=Shippori+Mincho:wght@700&display=swap");
 * {
   margin: 0px;
   padding: 0px;
 }
+/*NAVBAR*/
 #header {
   position: fixed;
   top: 0px;
@@ -44,16 +48,17 @@ margin-left: 50%;
   line-height: 50px;
   color: black;
 }
-
+/*SECCIÓN 1*/
 #section1 {
   margin: 0px auto;
 }
 .picture {
   background-color: black;
   color: white;
-  margin-top: 50px;
-  padding-top: 100px;
+  margin-top: 30px;
+  padding-top: 70px;
 }
+
 #section1 > div > img {
   display: block;
   margin: 0px auto;
@@ -62,7 +67,183 @@ margin-left: 50%;
   border-radius: 999px;
 }
 #section1 > div > h3 {
-  margin-top: 150px;
+  margin-top: 50px;
   text-align: center;
-  padding-bottom: 200px;
+  padding-bottom: 80px;
+  font-family: "RocknRoll One", sans-serif;
+}
+#container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 25%;
+}
+article {
+  display: flex;
+  margin-bottom: 50px;
+}
+article > img {
+  width: 200px;
+}
+article > p {
+  margin-left: 40px;
+  padding-top: 50px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+/*SECCIÓN 2*/
+
+#section2 {
+  background-color: black;
+}
+#video {
+  display: block;
+  margin: 0px auto;
+  padding-top: 100px;
+  padding-bottom: 5%;
+}
+#section2 > p {
+  margin: 0px 10%;
+  padding-top: 5%;
+  text-align: justify;
+  color: white;
+  font-family: "RocknRoll One", sans-serif;
+}
+#section2 > p > span {
+  color: #ccc;
+  font-family: "Shippori Mincho", serif;
+}
+#section2 > p:nth-child(2) {
+  text-align: center;
+}
+/*SECCIÓN 3*/
+#section3 {
+  margin: 0px 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+#section3 p {
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+}
+#section3 form {
+  display: flex;
+  flex-direction: column;
+}
+#email {
+  margin: 0px auto;
+  margin-top: 20px;
+  width: 300px;
+  height: 25px;
+}
+#submit {
+  margin: 0px auto;
+  margin-top: 20px;
+  width: 300px;
+  height: 25px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: "Lato", sans-serif;
+  transition: all 300ms;
+}
+#submit:hover {
+  box-shadow: 0px 0px 4px black;
+}
+/*RESPONSIVE*/
+@media (max-width: 1010px) {
+  .title-and-logo {
+    width: 94%;
+  }
+  #nav-bar {
+    margin-left: 10%;
+    width: 27%;
+  }
+  #section1 > div > h3 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #container {
+    margin-left: 10%;
+    margin-right: 3%;
+  }
+  article > p {
+  margin-right:15px;
+}
+}
+
+@media (max-width: 860px) {
+  #header {
+    flex-direction: column;
+  }
+  .title-and-logo {
+    margin: 0px auto;
+  }
+  #nav-bar {
+    margin: 0px auto;
+  }
+  .picture {
+    padding-top: 120px;
+  }
+  #header-img {
+    width: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  #section1 > div > img {
+    width: 300px;
+  }
+  article > img {
+    width: 100px;
+  }
+  article > p {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 577px) {
+  #title {
+    text-align: center;
+    margin-left: 50px;
+    font-size: 25px;
+    line-height: 50px;
+  }
+  #video {
+    padding-top: 50px;
+    width: 300px;
+    height: 168.75px;
+  }
+}
+
+@media (max-width: 507px) {
+  #title {
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 50px;
+  }
+  .title-and-logo {
+    width: 100%;
+  }
+  #nav-bar {
+    margin-left: 20px;
+    width: 100%;
+  }
+  .picture {
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    padding-top: 180px;
+  }
+  #email {
+    width: 250px;
+  }
+  #submit {
+    width: 250px;
+  }
 }
